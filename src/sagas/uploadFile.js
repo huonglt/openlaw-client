@@ -11,10 +11,8 @@ const uploadFile = (formData) => {
 export function* uploadFileSaga(action) {
     try {
         const result = yield call(uploadFile, action.formData);
-        console.log(`saga result: ${JSON.stringify(result)}`);
         yield put(uploadFileSuccessAction(result));
     } catch(err) {
-        console.log(`err ${JSON.stringify(err)}`);
         yield put(uploadFileFailedAction(err));
     }
 }
