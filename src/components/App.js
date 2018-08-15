@@ -7,7 +7,6 @@ export default class App extends Component {
         super(props);
     }
     render() {
-        console.log(`this.props = ${JSON.stringify(this.props)}`);
         const { parsedResult, err } = this.props;
         
         return (
