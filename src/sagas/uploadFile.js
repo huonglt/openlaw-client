@@ -8,6 +8,12 @@ const uploadFile = (formData) => {
     return axios.post(END_POINT, formData).then(res => res.data);
 };
 
+/**
+ * The saga to send http request to the server for parsing
+ * If success, it will dispatch UPLOAD_FILE_SUCCESS_ACTION to the store
+ * If failes, it will dispatch UPLOAD_FILE_FAILED_ACTION to the store
+ * @param {Object} action The action dispatched 
+ */
 export function* uploadFileSaga(action) {
     try {
         const result = yield call(uploadFile, action.formData);
