@@ -12,10 +12,15 @@ export default class FileUploader extends React.Component {
         const fileSelected = this.fileInput.current.files[0];
         
         if(fileSelected) {
-            const formData = new FormData();
-            formData.append('file', fileSelected);
-            this.props.upload(formData);
-            this.setState({ msg: ''});
+            if(fileSelected.size > 10 * 1024 * 1024) {
+                this.setState({ msg: 'Please select a file < 10MB' });    
+            } else {
+                const formData = new FormData();
+                formData.append('file', fileSelected);
+                this.props.upload(formData);
+                this.setState({ msg: ''});
+            }
+            
         } else {
             this.setState({ msg: 'Please select a file' });
         }
