@@ -8,7 +8,7 @@ export default class App extends Component {
     }
     render() {
         console.log(`this.props = ${JSON.stringify(this.props)}`);
-        const parsedResult = this.props.parsedResult;
+        const { parsedResult, err } = this.props;
         
         return (
             <div className="container">
@@ -16,6 +16,7 @@ export default class App extends Component {
                 <div className="row"><FileUploader upload={this.props.uploadFile}/></div>
                 {parsedResult && parsedResult.totalWordCount && <div className="row"><FileUploaderResult {...this.props.parsedResult}/></div>}
                 {parsedResult && parsedResult.errMsg && <div>{parsedResult.errMsg}</div>}
+                {err && <div>{err}</div>}
             </div>
         );
     }
