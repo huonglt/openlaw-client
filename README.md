@@ -29,3 +29,9 @@ npm start or yarn start
 ## To run unit test
 The app using jest as a test runner<br/>
 npm run test or yarn test
+
+## Further improvement
+A lot more things could be done to make this a better app including<br/>
+Unit tests for each component<br/>
+End to end tests<br/>
+Better UI design<br/>
