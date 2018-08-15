@@ -1,5 +1,11 @@
 import React from 'react';
 
+/**
+ * This component allows user to select a file to upload
+ * When click Upload button, it will check for a file being selected and its size is <= 10MB 
+ * If validation fails, it will display an error message, and not send the data to the server
+ * If valdation success, it will send data to the server for parsing
+ */
 export default class FileUploader extends React.Component {
     constructor(props) {
         super(props);
