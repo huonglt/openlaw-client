@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row m-3"
+  >
+    <h3>
+      Open Law - ASCII File Parsing
+    </h3>
+  </div>
+  <div
+    className="row m-3"
+  >
+    <h6>
+      Upload your ASCII file for parsing - No larger than 10MB
+    </h6>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row m-3"
+      >
+        <div>
+          <input
+            onChange={[Function]}
+            type="file"
+          />
+        </div>
+        <div>
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            Upload
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
