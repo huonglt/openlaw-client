@@ -1,6 +1,6 @@
 # OpenLaw - Web Client app
 
-This is a Bootstrap 4, React v16, Redux, Redux-Saga,axios app to upload an ASCII file for parsing<br/>
+This is a Webpack, Bootstrap 4, React v16, Redux, Redux-Saga, axios app to upload an ASCII file for parsing<br/>
 It uses Bootstrap for responsiveness, mobile friendly, and extensive css classes<br/>
 It uses Redux for state management<br/>
 It uses Redux-saga to manage side-effects<br/>
@@ -11,6 +11,8 @@ If fails, it display the error the server send it<br/>
 
 To upload file to the server, a file must be selected, and its size must be < 10MB.<br/>
 A messsage will be displayed if either of those two criteria not met<br/>
+
+It uses Webpack for bundling, and webpack-dev-server as a development server<br/>
 
 ## Prerequisites
 You need to have node, npm or yarn install<br/>
