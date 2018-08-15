@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import FileUploader from './FileUploader';
 import FileUploaderResult from './FileUploaderResult';
 
+/**
+ * A React component representing the App
+ */
 export default class App extends Component {
     constructor(props) {
         super(props);
